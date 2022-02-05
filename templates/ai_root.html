@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI_ROOT_TALK</title>
+</head>
+<body>
+ 
+<form action="/airoot" method="post">
+    <input type="text" name="word">
+    <input type="submit" value="submit">
+</form>
+{% if res != '' %}
+    <p> {{ res['content']}} </p>
+{% endif %}
+</body>
+</html>
